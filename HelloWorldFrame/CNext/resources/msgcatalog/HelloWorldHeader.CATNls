@@ -1,0 +1,5 @@
+HelloWorldHeader.HelloWorldCmd.Category  = "Tools";
+HelloWorldHeader.HelloWorldCmd.Title     = "Hello World";
+HelloWorldHeader.HelloWorldCmd.ShortHelp = "Display Hello World dialog";
+HelloWorldHeader.HelloWorldCmd.Help      = "Display a Hello World dialog";
+HelloWorldHeader.HelloWorldCmd.LongHelp  = "Display a Hello World dialog.";

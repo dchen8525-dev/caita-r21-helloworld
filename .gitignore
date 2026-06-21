@@ -1,0 +1,31 @@
+# CAA generated runtime and build views
+InstallRoot/
+BuildRoot/
+intel_a/
+win_b64/
+**/Objects/
+**/ImportedInterfaces/
+**/LocalGenerated/
+**/various/
+CATIAV5Level.lvl
+rade_*.log
+rade_env.txt
+.deploy-state.json
+.system-dictionary-backup
+
+# Compiler outputs
+*.dll
+*.exp
+*.lib
+*.obj
+*.pdb
+*.manifest
+
+# IDE and logs
+.vs/
+.idea/
+*.log
+
+# Temporary files
+temp/
+Install_config_win_b64

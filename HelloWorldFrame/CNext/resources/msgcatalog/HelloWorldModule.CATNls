@@ -1,0 +1,3 @@
+HelloWorldCmd.Title = "Hello World";
+HelloWorldCmd.ShortHelp = "Display Hello World dialog";
+HelloWorldCmd.LongHelp = "Display a Hello World dialog.";
