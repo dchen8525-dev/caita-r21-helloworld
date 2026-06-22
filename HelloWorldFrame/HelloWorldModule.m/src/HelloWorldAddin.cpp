@@ -60,10 +60,12 @@ CATCmdContainer* HelloWorldAddin::CreateToolbars()
 {
     HelloWorldLog("ADDIN", "CreateToolbars entered");
     // Create a new toolbar
-    NewAccess(CATCmdContainer, pToolbar, HelloWorldToolbar);
+    // Use a new access identifier to avoid stale CATSettings created by
+    // earlier development versions of the toolbar.
+    NewAccess(CATCmdContainer, pToolbar, PartNumberToolbar);
 
     // Create a starter for the command
-    NewAccess(CATCmdStarter, pStarter, HelloWorldStarter);
+    NewAccess(CATCmdStarter, pStarter, PartNumberStarter);
     
     // Attach the command header to the starter
     SetAccessCommand(pStarter, "HelloWorldCmd");
@@ -74,7 +76,8 @@ CATCmdContainer* HelloWorldAddin::CreateToolbars()
     // Register a visible toolbar view in the General workshop.
     AddToolbarView(pToolbar, 1, Right);
 
-    HelloWorldLog("ADDIN", "CreateToolbars completed toolbar=%p starter=%p",
+    HelloWorldLog("ADDIN",
+                  "CreateToolbars completed id=PartNumberToolbar toolbar=%p starter=%p",
                   pToolbar, pStarter);
     return pToolbar;
 }

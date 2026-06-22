@@ -35,6 +35,7 @@ private:
     CATDlgCombo*      m_pCategory;
     CATDlgEditor*     m_pMaterial;
     CATDlgEditor*     m_pNotes;
+    CATDlgLabel*      m_pNumberResult;
     CATDlgPushButton* m_pNumberButton;
     CATDlgLabel*      m_pStatusLabel;
 };
